@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>About Me</title>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn more about Emily Bresnahan and her love for lacrosse"/>
+
+    <script>
+        function dateStuff(){
+            var d = new Date(); 
+            var weekday = new Array(7); 
+            weekday[0] = "Sunday"; 
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+            document.getElementById("here").innerHTML = ("Happy"+ n);
+        }//using java script 
+    </script>
+</head>
+
+<body onload="dateStuff()">
+
+    <u1 style="list-style-type: none">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="aboutme.htm">About Me</a></li>
+            <li><a href=contact.htm>Contact Me</a></li>
+            <li><a href="history.htm">History</a></li>
+            <li><a href="facts.htm">Facts</a></li>
+            <li><a href="demos.htm">Demos</a></li>
+            <li><a href="collegelax.htm">College Lacrosse</a></li>
+            <li><a href="sitemap.htm">Sitemap</a></li>
+        </u1><br/>
+    <div class="container-fluid">
+    <div class="jumbotron">
+        <h1>About Me</h1></div>
+        <br/>
+        <img src="images/emily.jpg" alt="emily" title="emily" style="align-content:center"><br/>
+
+    <p>My name is Emily Bresnahan and I am a 22 year old senior who attends Babson College. For the past two years I have played on the Division III Women's Lacrosse team and this year we won the NEWMAC Championship. Before transfering to Babson College I played Division I Women's Lacrosse at the University of Colorado. Lacrosse is a sport I grew up playing and in turn has become apart of my identity. Thank you for visiting my website and I hope it shows you how meaningful a sport can be to someone!</p>
+    <br/>
+    <h2>Places to play lacrosse as a Babson College Student</h2>
+    <img style="align-content:center" alt="map of fields" src="images/map.jpg" height="534px" width="721px" usemap="#picturemap">
+ 
+ <map name="picturemap">
+  <area shape="rect" coords="4,165,65,237" alt="Babson" title="Babson College-MacDowell Field"
+  aref="http://babsonathletics.com/information/facilities/macdowellfield" target="_blank">
+  <area shape="rect" coords="313,138,372,198" alt="Wellesley" title="Wellesley College-Keohane Sports Center"
+  href="http://www.wellesleyblue.com/information/visitorsguide/pages/directions" target="_blank">
+</map>
+    <audio controls>
+        <source src="mymusic.mp3" type="audio/mpeg"/>
+    </audio>
+</body>
+
+</html>
+
