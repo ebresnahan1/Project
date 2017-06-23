@@ -2,6 +2,17 @@
     <head>
         <title>Facts about Women's Lacrosse</title>
         <meta charset="UTF-8">
+
+        <script>
+            function bigImg(x) {
+                x.style.height = "75%"; 
+                x.style.width = "75%"; 
+            }
+            function normImg(x) {
+                x.style.height = "50%"; 
+                x.style.width = "50%"; 
+            }
+        </script>
     </head>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <body>
@@ -26,7 +37,7 @@
             <p>Lacrosse is the fastest sport to be played on two feet.</p>
         
         <h1>Women's Lacrosse Field</h1>
-            <img src="images/field.jpg" height="300" alt="field" name="field">
+            <img style = "align-content:center" src="images/field.jpg" height="200" width="400" alt="field" name="field" onmouseover="bigImg(this)" onmouseout="normImg(this)">
             <p>Above is an image of a lacrosse field. This shows the dimensions of the field and also how many players a team must have on the field at all times. There must been eleven field players and a goalie representing each team during regulation play.</p>
         
     </body>
