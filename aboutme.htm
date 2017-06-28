@@ -6,6 +6,9 @@
     <meta name="description" content="Learn more about Emily Bresnahan and her love for lacrosse"/>
     <meta name="author" content="Emily Bresnahan"/>
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" />
     
     <script>
@@ -23,6 +26,21 @@
             document.getElementById("here").innerHTML = ("Happy"+ n);
         }//using java script 
     </script>
+    <script type="text/javascript">
+            function enlargeMe(id) {
+                var i = document.getElementById(id);
+                var w = i.width;
+                //w = parseInt(w);
+                i.width = w * 1.5;
+            }
+
+            function shrinkMe(vansh) {
+                var i = document.getElementById(vansh);
+                var w = i.width;
+                //w = parseInt(w);
+                i.width = w / 1.5;
+            }
+        </script>
 </head>
 
 <body onload="dateStuff()">
@@ -42,7 +60,7 @@
         <h1 style="text-align:center">About Me</h1></div>
         <p id="here" style="text-align:center"></p>
         <br/>
-        <img src="images/emily.jpg" alt="Emily" title="Emily" style="align-content:center"><br/>
+        <img id= "emily" src="images/emily.jpg" onmouseover="enlargeMe(this.id)" onmouseout="shrinkMe(this.id)" alt="Emily" title="Emily" style="align-content:center"><br/>
 
     <p>My name is Emily Bresnahan and I am a 22 year old senior who attends Babson College. For the past two years I have played on the Division III Women's Lacrosse team and this year we won the NEWMAC Championship. Before transfering to Babson College I played Division I Women's Lacrosse at the University of Colorado. Lacrosse is a sport I grew up playing and in turn has become apart of my identity. Thank you for visiting my website and I hope it shows you how meaningful a sport can be to someone!</p>
     <br/>

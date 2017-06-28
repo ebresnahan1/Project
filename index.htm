@@ -7,23 +7,53 @@
         <meta name="description" content="This page is designed for people of all ages to get a better understanding of women’s lacrosse. This site offers users a brief history of the sport, fun facts, demonstration videos, and information about lacrosse at the college level."/>
         <meta name="keywords" content="lacrosse, history, Babson Lacrosse, Emily Bresnahan, demos, demo, Babson, Colorado, Colorado Lacrosse, stick, trick, stick tricks, learn, facts, fun, fun facts, college lacrosse, college sports, sport, college, division"/>
         <meta name="author" content="Emily Bresnahan"/>
-
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <style>
             body {text-align:center; align-content:center;}
+            
+
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  
         <link href="style.css" rel="stylesheet" type="text/css" />
+  
+        </script>
+
 
         <script>
-        var yourName= prompt ("Hello-what is your name?"); 
+            var yourName= prompt ("Welcome-what is your name?"); 
             function addName(){
-                document.getElementById("nameHere").innerHTML= yourName + ", Welcome to the world of Lacrosse";};//this allows me to understand who is visiting the cite and will provide me with the users name. 
+                document.getElementById("nameHere").innerHTML= "Welcome to the world of Lacrosse " + yourName;};//this allows me to understand who is visiting the cite and will provide me with the users name. 
+
+            function pressGreen()
+            {var green = document.getElementById('green');
+	            if(green.onclick="pressGreen();") 
+	            {document.getElementById('nameHere').style.color = 'Green';
+	            document.getElementById('hText').style.color = 'Green';
+	            }}
+
+	        function pressRed()
+            {var yellow = document.getElementById('red');
+	            if(green.onclick="pressRed();") 
+	            {document.getElementById('nameHere').style.color = 'Red';
+	            document.getElementById('hText').style.color = 'Red';
+	            }}
+            
+            function pressBlue()
+            {var blue = document.getElementById('blue');
+                if(green.onclick="pressBlue();") 
+                {document.getElementById('nameHere').style.color = 'Blue';
+                document.getElementById('hText').style.color = 'Blue';
+        }}
 
         </script> 
     </head>
     
     <body onLoad="addName();">
-        
-        <ul style="list-style-type: none">
+        <ul style="list-style-type: acro">
             <li><a href="index.htm">Home</a></li>
             <li><a href="aboutme.htm">About Me</a></li>
             <li><a href=contact.htm>Contact Me</a></li>
@@ -33,20 +63,38 @@
             <li><a href="collegelax.htm">College Lacrosse</a></li>
             <li><a href="sitemap.htm">Sitemap</a></li>
         </ul><br/>
-        
-            <h1>Everything you need to know about women's lacrosse</h1> 
+
+        <div class="container-fluid">
+        <div class="jumbotron">
+            <br/>
+
+            <h1>All About Women's Lacrosse</h1> 
             <h2 id="nameHere" style="text-align:center"></h2>
         </div>
+        
+        <span id="welcome" style="font-size:14px">
+            <h2 style="text-align:center">Pick a Color:</h2>
+        <div class="col-sm-4" style="align-content:center">
+            <button type="button" id="green" onClick="pressGreen()">Green</button>
+        </div>
+        
+        <div class="col-sm-4" style="align-content:center">
+            <button type="button" id="red" onClick="pressRed()">Red</button>
+        </div>
 
-        <img style="align-content:center" alt="map of lacrosse field" title="map of lacrosse field" src="images/laxfield1.jpg" height="350px"><br/>
+        <div class="col-sm-4" style="align-content:center">
+            <button type="button" id="blue" onClick="pressBlue()">Blue</button>
+        </div>
+        </div>
+
+
+        <br/>
+        <img style="align-content:center" alt="map of lacrosse field" title="map of lacrosse field" src="images/laxfield1.jpg" height="450px"><br/>
         <h3>This page is designed for people of all ages to get a better understanding of women’s lacrosse. This site offers users a brief history of the sport, fun facts, demonstration videos, and information about lacrosse at the college level.</h3>
         <br/>
-        <p><a href="history.htm">History</a></p>
-        <p><a href="facts.htm">Facts</a></p>
-        <p><a href="demos.htm">Demos</a></p>
-        <p><a href="collegelax.htm">College Lacrosse</a></p>
 
-            <table boarder="2" align="center">
+
+            <table border="2" align="center">
                 <thead>
                     <tr><th colspan="2" style="text-align:center;">Site Page Description</th></tr>
                 </thead>
@@ -54,15 +102,17 @@
                 </tfoot>
                 <tbody>
                     <tr><th style="text-align:center">Pages</th><th style="text-align:center">Description</th></tr>
-                    <tr><td>History</td><td>This page displays how the sport has evolved over the years.</td></tr>
-                    <tr><td>Facts</td><td>Provides information about rules and regulations.</td></tr>
-                    <tr><td>Demos</td><td>Video clips</td></tr>
-                    <tr><td>College Lacrosse</td><td>College Lacrosse at Babson College</td></tr>
+                    <tr><td><a href="history.htm">History</a></td><td>This page displays how the sport has evolved over the years.</td></tr>
+                    <tr><td><a href="facts.htm">Facts</a></td><td>Provides information about rules and regulations.</td></tr>
+                    <tr><td><a href="demos.htm">Demos</a></td><td>Video demonstrations involving different aspects of women's lacrosse.</td></tr>
+                    <tr><td><a href="collegelax.htm">College Lacrosse</a></td><td>College Lacrosse at Babson College.</td></tr>
                 </tbody>
             </table>
             <br/>
 
-        <p>Click <a href="sitemap.htm">here</a> to view the websites site map.</p>
+        <p>Click <a href="sitemap.htm">here</a> to view the sitemap.</p>
+
+        <br/>
 
     </body>
 

@@ -2,5 +2,16 @@
 /*My CSS Document*/
 
 ul{list-style-type:none; margin:0; padding:0;}
-    li{display:incline}
-body {background-color:lightskyblue; font-size:16px; line-height: 20px; font-family: verdana; text-align:center}
+li{display:inline-block}
+
+body {background-color:lightskyblue; 
+    font-size:16px; 
+    line-height: 20px; 
+    font-family: verdana; 
+    text-align:center;
+    padding-top:60px;
+    padding-left:150px; 
+    padding-right: 150px; 
+    padding-bottom: 60px;  }
+th, td {
+    padding: 15px;}

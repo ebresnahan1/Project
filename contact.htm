@@ -4,14 +4,29 @@
 
         <title>Contact Me</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <style type="text/css">
+            body{width:50%; margin:auto}
+            h1, h2{text-align:center}
+            .ar{text-align:right}
+        </style>
+
         <script type="text/javascript"> 
-        function formValidate(){
-            var nameInX=document.getElementById("nameIn").value; if (nameInX.length==0) {alert("Please enter name to continue");};
-            var emailInX=document.getElementById("emailIn").value; 
-            if(emailInX.length==0){alert("Email is required to continue");};
-        };
-        //enter javascript 
+            function formValidate(){
+                var nameInX=document.getElementById("nameIn").value;
+            
+                if (nameInX.length==0) 
+                {alert("Please enter name to continue");};
+            
+                var emailInX=document.getElementById("emailIn").value; 
+            
+                if(emailInX.length==0){alert("Email is required to continue");};
+            
+                return false; 
+        }; 
         </script>
+        
+
     </head>
 
     <body>
@@ -28,14 +43,20 @@
 
         <h1>Contact Form</h1>
         <h2>Please complete contact form by filling out the following fields regarding your current contact information.</h2>
+        
         <form action="mailto:emily.bresnahan@colorado.edu" method="post" enctype="text/plain">
+        
         <fieldset>
             <legend>Contact Information</legend>
             <table style="margin-left:50px">
-                <tr><td>Your Name: </td><td><input type="text" name="name" size="30"/></td></tr>
-                <tr><td> E-Mail Address: </td><td><input type="text" name="email" size="30"/></td></tr>
-                <tr><td>Phone Number: </td><td><input type="text" name="phonenumber" size="30"/></td></tr>
-                <tr><td>Preferred Method of Contact: </td><td>Email<input type="radio" name="preferredcontact" value="prefEmail"/>Phone <input type="radio" name="preferredcontact" value="prefPhone"/></td></tr>
+                <tr><td class="ar">Your Name: </td><td><input type="text" name="name" size="30" id="nameIn" /></td></tr>
+
+                <tr><td class="ar"> E-Mail Address: </td><td><input type="text" name="email" size="30" id="emailIn"/></td></tr>
+
+                <tr><td class="ar">Phone Number: </td><td><input type="text" name="phonenumber" size="30"/></td></tr>
+
+                <tr><td>Preferred Method of Contact:</td>
+                <td style="padding-left:30px">Email<input type="radio" name="preferredcontact" value="prefEmail"/>Phone <input type="radio" name="preferredcontact" value="prefPhone"/></td></tr>
             </table>
         </fieldset>
 
@@ -47,6 +68,9 @@
         </p>
         <p>Please provide any additional comments or issues below:</p>
         <p><textarea name="comments" rows="5" cols="50"></textarea></p>
+        
+        <p style="text-align:center"><input type="submit" name="Submit" value="Submit" onClick="formValidate()"/>&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset" /> </p> 
+        
         </form>
 
     </body>
