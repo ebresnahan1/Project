@@ -5,11 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Emily Bresnahan's college lacrosse experience at Babson College"/>
         
-    
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript">
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
     
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
     <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
@@ -77,6 +85,16 @@
         <h3>Visit Babson College</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11804.09272264422!2d-71.2659951!3d42.2993708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4ef71f3899e76a89!2sBabson+College!5e0!3m2!1sen!2sus!4v1497908048270" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </map>
+
+        <br/><hr>
+
+        <h4>Want to check out the Babson Women's Lacrosse 2017 record?</h4>
+        
+        <p>14-6</p>
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        
     </body>
 </html>
 
